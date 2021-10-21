@@ -1,10 +1,10 @@
 # Dokumentacja
-## Endpoint /test_string/\<string\>
+## Endpoint: /test_string/\<string\>
+### <b>Wartość zwracana: int</b>
+### <b>Metoda: GET</b>
 
-Wartość zwracana: int
-
-Sprawdza zawartośc przekazanego stringa pod kątem występowania w nim: występowanie dużych i małych liter, liczb, znaków specjalnych.
-Jeżeli znaleziono znak z danej grupy, ustawiany jest odpowiedni bit w zwróconej wartości.
+Sprawdza zawartośc przekazanego stringa pod kątem występowania w nim: dużych i małych liter, liczb oraz znaków specjalnych.
+Jeżeli znak z danej grupy znajduje się stringu to ustawiany jest odpowiedni bit w zwracanej wartości.
 | Typ | Ustawiony bit|
 |:---|:---|
 | Duże litery     | 0x1 |
@@ -13,7 +13,7 @@ Jeżeli znaleziono znak z danej grupy, ustawiany jest odpowiedni bit w zwrócone
 | Znaki specjalne | 0x8 |
 
 ### Przykłady
----
+
 Zapytanie `/test_string/abcA`
 
 Odpowiedź: `3`

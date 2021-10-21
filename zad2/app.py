@@ -8,11 +8,7 @@ TYPE_SPECIAL	= 0x8
 
 app = Flask(__name__)
 
-@app.route("/")
-def empty_string(methods=['get','post','put','delete','update']):
-	return "0"
-
-@app.route("/test_string/<string:input_text>", methods=['get','post','put','delete','update'])
+@app.route("/test_string/<string:input_text>", methods=['get'])
 def test_string(input_text):
 	types = 0
 	for c in input_text:
