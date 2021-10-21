@@ -19,11 +19,11 @@ Zapytanie `/test_string/abcA`
 Odpowiedź: `3`
 
 ---
-Zapytanie `/test_string/a0"&`
+Zapytanie `/test_string/a0"$`
 
 Odpowiedź: `14`
 
 ---
-Zapytanie `/test_string/J/\CEK`
+Zapytanie `/test_string/J@CEK`
 
 Odpowiedź: `9`
