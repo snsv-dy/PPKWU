@@ -1,28 +1,37 @@
 # Dokumentacja
 ## Endpoint: /test_string/\<format\>/\<string\>
-### <b>Wartość zwracana: dokument w wybranym formacie</b>
 ### <b>Metoda: GET</b>
-### <b>Parametry URL</b>
-| Nazwa | Typ | Dozwolone wartości |
+### <b>Wartość zwracana: dokument w wybranym formacie</b>
+### <b>Parametry ścieżki:</b>
+| Nazwa | Typ | Opis |
 |:---|:---|:---|
-| Format     | String | txt, json, xml, csv |
+| format     | String | Określa format zwracanego dokumentu. Musi być jedną z wartości: txt, json, xml, csv. |
+| string | String | String przekazywany do endpointu <a href="https://github.com/snsv-dy/PPKWU/blob/master/zad2/README.md">/test_string</a> |
 
 <!-- Sprawdza zawartośc przekazanego stringa pod kątem występowania w nim: dużych i małych liter, liczb oraz znaków specjalnych.
 Jeżeli znak z danej grupy znajduje się stringu to ustawiany jest odpowiedni bit w zwracanej wartości. -->
+&nbsp;
+
 Zwraca wartość z endpointu <a href="https://github.com/snsv-dy/PPKWU/blob/master/zad2/README.md">/test_string</a> w wybranym formacie. W przypadku podania niepoprawnego formatu, zwracany jest pusty dokument.
+
+&nbsp;
 
 ### Przykłady
 
-Zapytanie `/test_string/abcA`
+Zapytanie `/test_string/txt/abc`
 
-Odpowiedź: `3`
-
----
-Zapytanie `/test_string/a0"$`
-
-Odpowiedź: `14`
+Odpowiedź: `Rodzaj znaków: 2.`
 
 ---
-Zapytanie `/test_string/J@CEK`
+Zapytanie `/test_string/json/abc`
 
-Odpowiedź: `9`
+Odpowiedź: <code>
+{
+	"rodzaj_znaków": "2"
+}
+</code>
+
+---
+Zapytanie `/test_string/xml/abc`
+
+Odpowiedź: ``
