@@ -20,18 +20,34 @@ Zwraca wartość z endpointu <a href="https://github.com/snsv-dy/PPKWU/blob/mas
 
 Zapytanie `/test_string/txt/abc`
 
-Odpowiedź: `Rodzaj znaków: 2.`
+Odpowiedź: 
+```
+Rodzaj znaków: 2.
+```
 
 ---
 Zapytanie `/test_string/json/abc`
 
-Odpowiedź: <code>
+Odpowiedź: 
+```
 {
-	"rodzaj_znaków": "2"
+	"rodzaj_znakow": "2"
 }
-</code>
+```
 
 ---
 Zapytanie `/test_string/xml/abc`
 
-Odpowiedź: ``
+Odpowiedź: 
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<rodzaj_znakow>2</rodzaj_znakow>
+```
+---
+Zapytanie `/test_string/csv/abc`
+
+Odpowiedź: 
+```
+"Rodzaj znaków"
+2
+```
