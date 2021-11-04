@@ -12,7 +12,7 @@
 Jeżeli znak z danej grupy znajduje się stringu to ustawiany jest odpowiedni bit w zwracanej wartości. -->
 &nbsp;
 
-Zwraca wartość z endpointu <a href="https://github.com/snsv-dy/PPKWU/blob/master/zad2/README.md">/test_string</a> w wybranym formacie. W przypadku podania niepoprawnego formatu, zwracany jest pusty dokument.
+Zwraca wartość z endpointu <a href="https://github.com/snsv-dy/PPKWU/blob/master/zad2/README.md">/test_string</a> zewnętrznej aplikacji w wybranym formacie. W przypadku podania niepoprawnego formatu, zwracany jest pusty dokument.
 
 &nbsp;
 
