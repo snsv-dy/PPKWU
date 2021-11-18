@@ -26,28 +26,28 @@ Rodzaj znaków: 2.
 ```
 
 ---
-Zapytanie `/test_string/json/abc`
+Zapytanie `/test_string/json/a0"$`
 
 Odpowiedź: 
 ```
 {
-	"rodzaj_znakow": "2"
+	"rodzaj_znakow": "14"
 }
 ```
 
 ---
-Zapytanie `/test_string/xml/abc`
+Zapytanie `/test_string/xml/J@CEK`
 
 Odpowiedź: 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
-<rodzaj_znakow>2</rodzaj_znakow>
+<rodzaj_znakow>9</rodzaj_znakow>
 ```
 ---
-Zapytanie `/test_string/csv/abc`
+Zapytanie `/test_string/csv/ONLYUPPER`
 
 Odpowiedź: 
 ```
 "Rodzaj znaków"
-2
+1
 ```
