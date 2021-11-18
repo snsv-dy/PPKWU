@@ -51,10 +51,18 @@ def test_string(format, input_text):
 	return ""
 	# return f"{format}, {input_text}"
 
+regexes = {
+	"json": r"\"rodzaj_znakow\"\:\s\"(\d+)\"",
+	"txt": r"Rodzaj znaków\:\s(\d+)\.",
+	"xml": r"\<rodzaj_znakow\>(\d+)\<\/rodzaj_znakow\>",
+	"csv": r"\"Rodzaj znaków\"\n(\d+)"
+}
+
 @app.route("/convert_string/<string:source_format>/<string:dest_format>", methods=["post"])
 def aba(source_format, dest_format):
 	if source_format in formats and dest_format in formats:
 		data = request.data.decode("utf-8")
-		parsed = re.findall(r"\"rodzaj_znakow\"\:\s\"(\d+)\"", data)
-		print(parsed)
+		parsed = re.findall(regexes[source_format], data)[0]
+		result = format_result(dest_format, int(parsed))
+		return result
 	return "zły format"
