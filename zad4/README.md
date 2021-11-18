@@ -13,13 +13,13 @@
 Jeżeli znak z danej grupy znajduje się stringu to ustawiany jest odpowiedni bit w zwracanej wartości. -->
 &nbsp;
 
-Zwraca wartość z endpointu <a href="https://github.com/snsv-dy/PPKWU/blob/master/zad2/README.md">/test_string</a> zewnętrznej aplikacji w wybranym formacie. W przypadku podania niepoprawnego formatu, zwracany jest pusty dokument.
+Zwraca wartość z endpointu <a href="https://github.com/snsv-dy/PPKWU/blob/master/zad3/README.md">/test_string</a> zewnętrznej aplikacji w wybranym formacie i konwertuje go na inny format. W przypadku podania niepoprawnego formatu, zwracany jest pusty dokument.
 
 &nbsp;
 
 ### Przykłady
 
-Zapytanie `/test_string/json/txt/abc`
+Zapytanie `/convert_string/json/txt/abc`
 
 Odpowiedź: 
 ```
@@ -27,7 +27,7 @@ Rodzaj znaków: 2.
 ```
 
 ---
-Zapytanie `/test_string/xml/json/a0"$`
+Zapytanie `/convert_string/xml/json/a0"$`
 
 Odpowiedź: 
 ```
@@ -37,7 +37,7 @@ Odpowiedź:
 ```
 
 ---
-Zapytanie `/test_string/txt/xml/J@CEK`
+Zapytanie `/convert_string/txt/xml/J@CEK`
 
 Odpowiedź: 
 ```
@@ -45,7 +45,7 @@ Odpowiedź:
 <rodzaj_znakow>9</rodzaj_znakow>
 ```
 ---
-Zapytanie `/test_string/csv/csv/ONLYUPPER`
+Zapytanie `/convert_string/csv/csv/ONLYUPPER`
 
 Odpowiedź: 
 ```
@@ -72,7 +72,7 @@ Kontwertuje przekazany w żądaniu string na wybrany przez użytkownika format. 
 
 ### Przykłady
 
-Zapytanie `/test_string/json/txt`
+Zapytanie `/convert_string/json/txt`
 
 Zawartość żądania: 
 ```
@@ -87,7 +87,7 @@ Rodzaj znaków: 2.
 ```
 
 ---
-Zapytanie `/test_string/xml/json/a0"$`
+Zapytanie `/convert_string/xml/json`
 
 Zawartość żądania: 
 ```
@@ -102,7 +102,7 @@ Odpowiedź:
 ```
 
 ---
-Zapytanie `/test_string/txt/xml/J@CEK`
+Zapytanie `/convert_string/txt/xml`
 
 Zawartość żądania: 
 ```
@@ -114,7 +114,7 @@ Odpowiedź:
 <rodzaj_znakow>9</rodzaj_znakow>
 ```
 ---
-Zapytanie `/test_string/txt/csv/ONLYUPPER`
+Zapytanie `/convert_string/txt/csv`
 
 Zawartość żądania: 
 ```

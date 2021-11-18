@@ -1,6 +1,7 @@
 from flask import Flask, Response, request
 import os
 import requests
+import re
 # from flask import request
 
 app = Flask(__name__)
@@ -14,6 +15,8 @@ content_types = {
 	"csv": "text/csv; charset=UTF-8",
 	None: "text/plain; charset=UTF-8"
 }
+
+formats = ["txt", "json", "xml", "csv"]
 
 def format_result(format, value):
 	
@@ -48,7 +51,10 @@ def test_string(format, input_text):
 	return ""
 	# return f"{format}, {input_text}"
 
-@app.route("/aba", methods=["post"])
-def aba():
-	print(str(request.data))
-	return "alright"
+@app.route("/convert_string/<string:source_format>/<string:dest_format>", methods=["post"])
+def aba(source_format, dest_format):
+	if source_format in formats and dest_format in formats:
+		data = request.data.decode("utf-8")
+		parsed = re.findall(r"\"rodzaj_znakow\"\:\s\"(\d+)\"", data)
+		print(parsed)
+	return "zły format"
