@@ -66,7 +66,7 @@ Odpowiedź:
 Jeżeli znak z danej grupy znajduje się stringu to ustawiany jest odpowiedni bit w zwracanej wartości. -->
 &nbsp;
 
-Kontwertuje przekazany w żądaniu string na wybrany przez użytkownika format. W przypadku podania niepoprawnego formatu lub danych niezgodnych z wybranym formatem, zwracany jest pusty dokument.
+Kontwertuje przekazany w żądaniu sformatowany dokument na inny format. W przypadku podania niepoprawnego formatu lub danych niezgodnych z wybranym formatem, zwracany jest pusty dokument.
 
 &nbsp;
 
