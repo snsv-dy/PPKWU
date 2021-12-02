@@ -11,7 +11,7 @@ Wyszukuje firmy za pomocą wyszukiwarki panorama firm i zwraca dokument html z 
 
 &nbsp;
 
-### Przykłady (później)
+### Przykłady
 
 Zapytanie `/query/szkoła`
 
