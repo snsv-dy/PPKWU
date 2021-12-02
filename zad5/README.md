@@ -1,5 +1,5 @@
 # Dokumentacja
-## Endpoint: /query/<szukana firma>
+## Endpoint: /query/\<szukana firma\>
 ### <b>Metoda: GET</b>
 ### <b>Wartość zwracana: Dokument html z listą wyników</b>
 ### <b>Parametry ścieżki:</b>
