@@ -13,9 +13,12 @@ Wyszukuje firmy za pomocą wyszukiwarki panorama firm i zwraca dokument html z 
 
 ### Przykłady (później)
 
-Zapytanie `/convert_string/json/txt/abc`
+Zapytanie `/query/szkoła`
 
 Odpowiedź: 
 ```
-Rodzaj znaków: 2.
+Generuj vcard Nazwa firmy: CK EDUKATOR Anna Sowińska , telefon: 793 804 545, email: edukatorkielce@op.pl, address: ul. Jagiellońska 90, 25-734 Kielce
+Generuj vcard Nazwa firmy: CK EDUKATOR Anna Sowińska , telefon: 793 804 545, email: edukatorkielce@op.pl, address: ul. Jagiellońska 90, 25-734 Kielce
+Generuj vcard Nazwa firmy: Euronauka , telefon: 607 172 688, email: sekretariat@euronauka.eu, address: ul. Harcerska 18, 63-000 Środa Wielkopolska
+Generuj vcard Nazwa firmy: Euronauka , telefon: 607 172 688, email: sekretariat@euronauka.eu, address: ul. Harcerska 18, 63-000 Środa Wielkopolska 
 ```
